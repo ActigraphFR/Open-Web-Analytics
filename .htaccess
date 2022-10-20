@@ -38,3 +38,50 @@ RewriteRule js$ https://%{HTTP_HOST}%1/modules/base/dist/owa.%2.js [NC,R=301,L]
 
 </IfModule>
 
+<Files .htaccess>
+	Order allow,deny
+	Deny from all
+</Files>
+
+Options -Indexes
+
+<Files yarn.lock>
+	Order allow,deny
+	Deny from all
+</Files>
+<Files package.json>
+        Order allow,deny
+        Deny from all
+</Files>
+<Files webpack.config.js>
+        Order allow,deny
+        Deny from all
+</Files>
+<Files README.md>
+        Order allow,deny
+        Deny from all
+</Files>
+<Files CONTRIBUTING.md>
+        Order allow,deny
+        Deny from all
+</Files>
+<Files .gitconfig>
+        Order allow,deny
+        Deny from all
+</Files>
+<Files .gitattributes>
+        Order allow,deny
+        Deny from all
+</Files>
+<Files composer.json>
+        Order allow,deny
+        Deny from all
+</Files>
+<Files composer.lock>
+        Order allow,deny
+        Deny from all
+</Files>
+<Files package-lock.json>
+        Order allow,deny
+        Deny from all
+</Files>
